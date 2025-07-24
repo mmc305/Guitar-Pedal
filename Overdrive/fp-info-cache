@@ -1,4 +1,4 @@
-25601077783904357
+25604584458324885
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2425,6 +2425,13 @@ Button_Switch_THT
 SW_XKB_DM1-16UP-1
 1A 30V SPDT Micro Switch rated for one million cycles, W12.7xD5.7xH6.6, https://www.helloxkb.com/public/images/pdf/DMX-XXXP-X.pdf
 SPDT endstop limit switch vertical hook lever XKB DM1-16UP-1
+0
+3
+3
+Button_Switch_THT
+spdt switch custom
+
+
 0
 3
 3
@@ -92434,6 +92441,13 @@ SPST SPDT DC TE0598-P2
 0
 7
 7
+Relay_THT
+Untitled
+
+
+0
+3
+3
 Resistor_SMD
 R_0201_0603Metric
 Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
