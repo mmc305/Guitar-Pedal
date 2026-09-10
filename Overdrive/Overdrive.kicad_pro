@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -77,6 +95,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -94,6 +113,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -113,9 +133,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -188,6 +211,7 @@
       ],
       "track_widths": [
         0.0,
+        0.254,
         0.5,
         1.0
       ],
@@ -221,6 +245,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -521,7 +553,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Overdrive.step",
       "svg": "",
       "vrml": ""
     },
@@ -634,6 +666,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "FX_Loop",
     "plot_directory": "",
     "reuse_designators": true,
@@ -653,17 +693,13 @@
         "uuid": "11b95356-caa1-437c-a82a-3070bdc35e65"
       }
     ],
-    "used_designators": "D3-6,#PWR4,#PWR6-7,#PWR10-21,#PWR23-34,Distortion1-2,C2,C4-16,CP1-2,RB1-2,R4-26,Level1-2,Q1-3,SW1,Tone1-2,U1-2,J4",
+    "used_designators": "D1-6,#PWR1-21,#PWR23-34,Distortion1-2,C1-16,CP1-2,RB1-2,R1-26,Level1-2,Q1-3,SW1,Tone1-2,U1-2,J1-2,J4",
     "variants": []
   },
   "sheets": [
     [
       "11b95356-caa1-437c-a82a-3070bdc35e65",
       "Overdrive"
-    ],
-    [
-      "c52e9a8e-e301-4627-8db3-79ad1da1a4bf",
-      "FX_Loop"
     ]
   ],
   "text_variables": {},
